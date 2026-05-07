@@ -376,7 +376,7 @@ body {
 .section-title h3 {
   display: inline-block;
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.2em;
   text-transform: capitalize;
@@ -558,7 +558,7 @@ header.main-header .header-sticky.active {
 
 .main-menu ul ul li a:hover,
 .main-menu ul ul li a:focus {
-  color: var(--primary-color);
+  color: #fdcd28;
   background-color: transparent;
   padding: 8px 20px 8px 23px !important;
 }
@@ -705,7 +705,7 @@ header.main-header .header-sticky.active {
   background-position: center center;
   background-size: cover;
   overflow: hidden;
-  padding: 130px 0 350px;
+  padding: 130px 0 130px;
 }
 
 .hero-section.bg-section::before {
@@ -2372,11 +2372,14 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .main-footer {
-  background: #030303 url("../images/site-footer-bg.jpg") no-repeat;
+  /* background: #030303 url("../images/site-footer-bg.jpg") no-repeat; */
   background-position: top center;
   background-size: 100% auto;
   padding: 70px 0 25px;
   margin-bottom: 50px;
+  background:
+    linear-gradient(rgb(0 0 0 / 71%), rgb(0 0 0 / 58%)),
+    url(../images/site-footer-bg.jpg) no-repeat center center / cover !important;
 }
 
 .about-footer {
@@ -2612,7 +2615,7 @@ header.main-header .header-sticky.active {
 }
 
 .vision-mission {
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 
 .vision-mission .section-title {
@@ -4213,7 +4216,7 @@ header.main-header .header-sticky.active {
 }
 
 .post-entry {
-  border-bottom: 1px solid var(--divider-color);
+  border-bottom: 1px solid #0970a0;
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
@@ -4620,7 +4623,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .page-contact-us {
-  padding: 100px 0 50px;
+  padding: 50px 0 50px;
 }
 
 .contact-info-form {
@@ -4633,6 +4636,7 @@ header.main-header .header-sticky.active {
   border: 1px solid var(--divider-color);
   border-radius: 30px;
   padding: 50px 35px;
+  border: 1px solid #1074a5;
 }
 
 .contact-information {
@@ -4645,9 +4649,9 @@ header.main-header .header-sticky.active {
   margin-right: 30px;
 }
 
-.contact-information .section-title {
+/* .contact-information .section-title {
   margin-bottom: 100px;
-}
+} */
 
 .contact-information .section-title p,
 .contact-information .section-title h2 {
@@ -6606,4 +6610,8 @@ header.main-header .header-sticky.active {
 .footer-newsletter ul li i {
   background: #076898;
   padding: 8px 10px;
+}
+.footer-copyright-text a {
+  color: #076898;
+  font-weight: bold;
 }
